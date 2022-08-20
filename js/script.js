@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
-        speed: 600,
+        speed: 400,
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
@@ -81,7 +81,7 @@ $(document).ready(function(){
     validateForms('#consultation form');
     validateForms('#order form');
 
-    $('input[name=phone]').mask("+380 (999) 999-99-99");
+    $('input[name=phone]').mask("+380 (999) 999-99-9");
 
     $('form').submit(function(e) {
         e.preventDefault();
